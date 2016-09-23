@@ -11,14 +11,6 @@ define('APPLICATION_PATH', __DIR__ . '/..');
 $_SERVER['REQUEST_SCHEME'] = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') ? 'https' : 'http';
 $uri = $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
 
-$options = [
-	'server' => 'http://raml-server-nette-example.127.0.0.1.xip.io',
-	'apiUriPart' => 'api',
-	'ramlDir' => APPLICATION_PATH . '/raml',
-	'ramlUriPart' => 'raml',
-	'controllerNameSpace' => 'App\\Api'
-];
-
 $configurator = new Nette\Configurator;
 
 //$configurator->setDebugMode('23.75.345.200'); // enable for your remote IP
