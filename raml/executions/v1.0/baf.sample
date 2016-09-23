@@ -1,0 +1,9 @@
+{
+  "status": 200,
+  "success": true,
+  "data": {
+    "message": "search response",
+    "test": "Tot jsou testovací data pro jinou definici"
+
+  }
+}
