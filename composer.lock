@@ -249,26 +249,26 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/jasir/php-raml-server.git",
-                "reference": "2bf1f382d0a68731d3e7c651876bf560ed42fb5e"
+                "reference": "31d70689ba3f89e02a4ca514cdf4c1c028da450f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jasir/php-raml-server/zipball/2bf1f382d0a68731d3e7c651876bf560ed42fb5e",
-                "reference": "2bf1f382d0a68731d3e7c651876bf560ed42fb5e",
+                "url": "https://api.github.com/repos/jasir/php-raml-server/zipball/31d70689ba3f89e02a4ca514cdf4c1c028da450f",
+                "reference": "31d70689ba3f89e02a4ca514cdf4c1c028da450f",
                 "shasum": ""
             },
             "require": {
                 "alecsammon/php-raml-parser": "~2.0",
                 "guzzlehttp/guzzle": "~6.0.0",
-                "nette/caching": "^2.4",
+                "nette/caching": "^2.3",
                 "nette/finder": "^2.3",
                 "nette/robot-loader": "^2.3",
-                "slim/extras": "~2.0.0",
-                "slim/slim": "~2.0",
-                "symfony/yaml": "3.1 as v2.6",
+                "slim/extras": "^2.0.0",
+                "slim/slim": "^2.0",
                 "tracy/tracy": "^2.3"
             },
             "require-dev": {
+                "janmarek/mockista": "^1.1",
                 "phpunit/phpunit": "^5.4"
             },
             "type": "library",
@@ -281,7 +281,7 @@
             "license": [
                 "MIT"
             ],
-            "time": "2016-06-20 11:17:22"
+            "time": "2016-07-26 12:09:32"
         },
         {
             "name": "justinrainbow/json-schema",
