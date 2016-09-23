@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "43e843a97a92fb84a75ac1410ecef436",
-    "content-hash": "3da98cc5ea296af3341d5dae5fe5bc97",
+    "hash": "15f9e2ceb9ae0fad3b282b4e91a63c09",
+    "content-hash": "62b851aa24a2c40b589a925be9f81f4f",
     "packages": [
         {
             "name": "alecsammon/php-raml-parser",
@@ -249,12 +249,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/jasir/php-raml-server.git",
-                "reference": "2c85a14e6244e3ece15a1dd902adceb0d1401552"
+                "reference": "2bf1f382d0a68731d3e7c651876bf560ed42fb5e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jasir/php-raml-server/zipball/2c85a14e6244e3ece15a1dd902adceb0d1401552",
-                "reference": "2c85a14e6244e3ece15a1dd902adceb0d1401552",
+                "url": "https://api.github.com/repos/jasir/php-raml-server/zipball/2bf1f382d0a68731d3e7c651876bf560ed42fb5e",
+                "reference": "2bf1f382d0a68731d3e7c651876bf560ed42fb5e",
                 "shasum": ""
             },
             "require": {
@@ -281,7 +281,7 @@
             "license": [
                 "MIT"
             ],
-            "time": "2016-06-15 16:18:30"
+            "time": "2016-06-20 11:17:22"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -1646,26 +1646,31 @@
         },
         {
             "name": "tracy/tracy",
-            "version": "v2.3.11",
+            "version": "v2.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/tracy.git",
-                "reference": "152b7602115dd3a66f3190280951390097a15f65"
+                "reference": "89cd0c8cfd7e246a39a504f860cf2fbb5a5095f1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/tracy/zipball/152b7602115dd3a66f3190280951390097a15f65",
-                "reference": "152b7602115dd3a66f3190280951390097a15f65",
+                "url": "https://api.github.com/repos/nette/tracy/zipball/89cd0c8cfd7e246a39a504f860cf2fbb5a5095f1",
+                "reference": "89cd0c8cfd7e246a39a504f860cf2fbb5a5095f1",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.1"
+                "php": ">=5.4.4"
             },
             "require-dev": {
                 "nette/di": "~2.3",
-                "nette/tester": "~1.3"
+                "nette/tester": "~2.0"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.4-dev"
+                }
+            },
             "autoload": {
                 "classmap": [
                     "src"
@@ -1697,7 +1702,7 @@
                 "debugger",
                 "nette"
             ],
-            "time": "2016-05-30 09:03:15"
+            "time": "2016-06-30 19:57:01"
         }
     ],
     "packages-dev": [
@@ -1772,7 +1777,7 @@
             "package": "symfony/yaml"
         }
     ],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": {
         "jasir/raml-server": 20
     },
