@@ -17,6 +17,8 @@ download it following [the instructions](https://doc.nette.org/composer). Then u
 
 		composer create-project nette/sandbox path/to/install
 		cd path/to/install
+		cp app/config/config.local.sample.neon app/config/config.local.neon
+
 
 
 Make directories `temp/` and `log/` writable.
