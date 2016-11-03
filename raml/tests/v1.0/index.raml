@@ -10,6 +10,7 @@ baseUri: http://raml-server.127.0.0.1.xip.io/v1.0
       test:
         description: Any value you put here will be returned. This enpoint serves as a heartbeat monitor.
         example: "test123"
+        required: true
 
     responses:
       200:
@@ -23,14 +24,15 @@ baseUri: http://raml-server.127.0.0.1.xip.io/v1.0
   get:
     queryParameters:
       test:
-        description: Any value you put here will be returned. This enpoint serves as a heartbeat monitor.
+        description: Any value you put here will be returned. Description of query parameter.
         example: "test123"
+        required: true
     responses:
       200:
         description: Testing the service
         body:
           application/json:
-            example: !include hello.sample
+            example: !include helloWorld.sample
 
 /search:
   get:

@@ -3,6 +3,6 @@
   "success": true,
   "data": {
     "message": "hello",
-    "test": "Tot jsou testovací data pro jinou definici"
+    "test": "Hello world!"
   }
 }

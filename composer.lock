@@ -249,12 +249,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/jasir/php-raml-server.git",
-                "reference": "31d70689ba3f89e02a4ca514cdf4c1c028da450f"
+                "reference": "ab5a4b01874aa203d40933e85f30845ae235bd88"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jasir/php-raml-server/zipball/31d70689ba3f89e02a4ca514cdf4c1c028da450f",
-                "reference": "31d70689ba3f89e02a4ca514cdf4c1c028da450f",
+                "url": "https://api.github.com/repos/jasir/php-raml-server/zipball/ab5a4b01874aa203d40933e85f30845ae235bd88",
+                "reference": "ab5a4b01874aa203d40933e85f30845ae235bd88",
                 "shasum": ""
             },
             "require": {
@@ -281,7 +281,7 @@
             "license": [
                 "MIT"
             ],
-            "time": "2016-07-26 12:09:32"
+            "time": "2016-11-03 13:23:41"
         },
         {
             "name": "justinrainbow/json-schema",
