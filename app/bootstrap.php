@@ -22,6 +22,12 @@ $configurator->createRobotLoader()
 	->register();
 
 
+$configurator->addConfig(__DIR__ . '/config/config.neon');
+$configurator->addConfig(__DIR__ . '/config/config.local.neon');
+
+$container = $configurator->createContainer();
+
+// RAML SERVER HANDLING
 if (isset($_SERVER['REQUEST_SCHEME'])) {
 
 	$server = $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST'];
@@ -43,7 +49,9 @@ if (isset($_SERVER['REQUEST_SCHEME'])) {
 	$router = new \RamlServer\ZeroRouter($options, $uri);
 	$router->setCache($cache);
 	$router->addProcessor(new RamlServer\MockProcessorFactory(false));
-	$router->addProcessor(new RamlServer\DefaultProcessorFactory());
+	$router->addProcessor(new RamlServer\DefaultProcessorFactory(
+		new \App\Api\ControllerFactory('App\\Api', $container))
+	);
 	$router->addProcessor(new RamlServer\MockProcessorFactory(true));
 
 
@@ -62,8 +70,4 @@ if (isset($_SERVER['REQUEST_SCHEME'])) {
 	}
 }
 
-
-$configurator->addConfig(__DIR__ . '/config/config.neon');
-$configurator->addConfig(__DIR__ . '/config/config.local.neon');
-
-return $configurator->createContainer();
+return $container;
